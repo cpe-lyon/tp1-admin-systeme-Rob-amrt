@@ -45,9 +45,11 @@ Cela nous retourne '-bash: /root: Permission denied'
 
 #### Question 6 : Essayez la commande sudo cd /root; que se passe-t-il? Expliquez
 On nous demande le mot de passe du root, puis que la commande `cd` est inconnu.
-Cela est dû au fait que le programme sudo est différent du shell. La commande `cd` étant propre au shell, celle-ci ne peut être utilisée à l'intérieur du sudo.
+Cela est dû au fait que le programme sudo est différent du bash. La commande `cd` étant propre au shell, celle-ci ne peut être utilisée à l'intérieur du sudo.
 
 #### Question 7 : A partir de votre dossier personnel, créez l’arborescence suivante :
+
+Utilisez la commande `mkdir nom_dossier` pour créer des dossiers et la commande `touch` pour créer des fichiers
 
 
 
