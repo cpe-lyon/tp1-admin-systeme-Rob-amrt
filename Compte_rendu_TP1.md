@@ -1,6 +1,6 @@
 # TP 1 - Installation d’Ubuntu Server et prise en main du shell
 
-### Exercice 2 Prise en main de l’interpréteur de commandes 
+## Exercice 2 Prise en main de l’interpréteur de commandes 
 
 ### Manuel
 
@@ -122,7 +122,7 @@ lignes 10 à 20.
 La commande dmesg ou display message, permet de voir l'historique des messages du noyaux. La commande less quant à elle, ne quitte pas la pagination, il est donc possible de revenir en arrière sans relancer la commande, naviguer dans le fichier ouvert à l'aide des flèches de direction du clavier, passer d'une page à l'autre en appuyant sur la barre Espace ou F, revenir sur la page précédente en appuyant sur B (back), aller au début du fichier G, aller à la fin du fichier Shift+G et quitter avec Q.
 Une option qui peut être intéressante est -N. Elle sert à numéroter les lignes du fichier affiché à l'écran (le fichier lu n'est aucunement modifié).
 
-## Question 16 : Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page
+#### Question 16 : Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page
 de manuel de ce fichier ?
 
 Le fichier /etc/passwd contient la liste de tous les utilisateurs systèmes ainsi que divers données sur leur compte comme l'id, le chemin d'accès au dossier utilisateur, le shell utilisé (/bin/false pour interdire).
