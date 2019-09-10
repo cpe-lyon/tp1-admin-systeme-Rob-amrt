@@ -115,8 +115,43 @@ Les raccourcis sont `Ctrl+Q` pour activer et `Ctrl+S` pour interrompre
 
 #### Question 14 : Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les
 lignes 10 à 20.
-5 première ligne : `head -5 /var/log/syslog`
+- 5 première ligne : `head -5 /var/log/syslog`
+- 15 dernières lignes : ` tail -15 /var/log/syslog`
 
+#### Question 15 : Que fait la commande dmesg | less ?
+La commande dmesg ou display message, permet de voir l'historique des messages du noyaux. La commande less quant à elle, ne quitte pas la pagination, il est donc possible de revenir en arrière sans relancer la commande, naviguer dans le fichier ouvert à l'aide des flèches de direction du clavier, passer d'une page à l'autre en appuyant sur la barre Espace ou F, revenir sur la page précédente en appuyant sur B (back), aller au début du fichier G, aller à la fin du fichier Shift+G et quitter avec Q.
+Une option qui peut être intéressante est -N. Elle sert à numéroter les lignes du fichier affiché à l'écran (le fichier lu n'est aucunement modifié).
+
+## Question 16 : Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page
+de manuel de ce fichier ?
+
+Le fichier /etc/passwd contient la liste de tous les utilisateurs systèmes ainsi que divers données sur leur compte comme l'id, le chemin d'accès au dossier utilisateur, le shell utilisé (/bin/false pour interdire).
+La commande pour accéder au manuel de ce fichier est man 5 passwd.
+
+#### Question 17 : Affichez seulement la première colonne triée par ordre alphabétique inverse
+
+#### Question 18 : Quelle commande nous donne le nombre d’utilisateurs ?
+La commande `who -q`
+
+#### Question 19 : Combien de pages de manuel comportent le mot-clé conversion dans leur description ?
+
+#### Question 20 : A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine
+La commande `find` permet de trouver un fichier selon un chemin d'accès.
+Pour tout le système la commande sera : `find / -name 'passwd'`
+
+#### Question 21 : Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier
+~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null
+Pour cela nous utiliserons la commande `find / -name 'passwd' > ~/list_passwd_files.txt 2>/dev/null`
+Le 2> permet d'esclure les erreurs.
+
+#### Question 22 : Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment
+
+#### Question 23 : Utilisez la commande locate pour trouver le fichier history.log.
+La commande `locate history.log` nous dit que le fichier se situe dans /`var/log/apt/history.log`
+
+#### Question 24 : Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ?
+Le mannuel nous apprend que la commande `locate` utilise une ou plusieurs base de donnée, mis à jour par la commande `updatedb` qui permet de relié pour chaque fichier son chemin de location.
+Cette base de donnée se met à jour tout les 24H, d'où l'impossibilité de trouver des fichiers fraichement créé. Pour cela, il faut mettre la base de donnée à jour avec `updatedb`
 
 
 
