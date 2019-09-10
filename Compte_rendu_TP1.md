@@ -115,7 +115,7 @@ Les raccourcis sont `Ctrl+Q` pour activer et `Ctrl+S` pour interrompre
 
 #### Question 14 : Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les
 lignes 10 à 20.
-- 5 première ligne : `head -5 /var/log/syslog`
+- 5 premières lignes : `head -5 /var/log/syslog`
 - 15 dernières lignes : ` tail -15 /var/log/syslog`
 
 #### Question 15 : Que fait la commande dmesg | less ?
